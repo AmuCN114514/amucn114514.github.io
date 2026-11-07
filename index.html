@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmuCN</title>
+<meta name="description" content="AmuCN 的个人网站 —— FolderStudios 创始人，独立软件开发者。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef0ec; --ink:#1d2a27; --muted:#5d6b67; --line:#cfd5cf; --accent:#2c6b5c;
+  --serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#141a19; --ink:#e4ebe7; --muted:#93a39d; --line:#2a3633; --accent:#7cc4b0;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 var(--sans);-webkit-font-smoothing:antialiased}
+main{max-width:640px;margin:0 auto;padding:72px 24px 48px}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.hero{display:flex;gap:24px;align-items:center;margin-bottom:56px}
+.hero img{width:104px;height:104px;border-radius:50%;object-fit:cover;flex:none;background:var(--line)}
+h1{font:700 40px/1.2 var(--serif);margin:0 0 6px;letter-spacing:.01em}
+.hero p{margin:0;color:var(--muted)}
+
+section{margin-bottom:52px}
+h2{font:700 20px/1.4 var(--serif);margin:0 0 16px}
+p{margin:0 0 12px}
+
+.works{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.works li{padding:16px 0;border-bottom:1px solid var(--line)}
+.works b{font-weight:600}
+.works span{display:block;color:var(--muted);font-size:15px}
+
+figure{margin:0}
+figure img{width:100%;height:auto;border-radius:6px;display:block;background:var(--line)}
+.sheet{aspect-ratio:2845/2067}
+.photo{aspect-ratio:1080/937;object-fit:cover}
+figcaption{margin-top:8px;color:var(--muted);font-size:14px}
+
+.links{display:flex;flex-wrap:wrap;gap:8px 24px;list-style:none;padding:0;margin:0}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
+
+@media (max-width:480px){
+  main{padding-top:48px}
+  .hero{flex-direction:column;align-items:flex-start}
+  h1{font-size:34px}
+}
+img{-webkit-user-drag:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="https://s3.bmp.ovh/2026/11/07/cV93C5Ws.png" alt="AmuCN 的头像：一只闭眼大叫的黑猫">
+    <div>
+      <h1>AmuCN</h1>
+      <p>独立软件开发者，FolderStudios 创始人。</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>关于我</h2>
+    <p>我做网页应用，喜欢把一个产品收进一个文件里：打开就能用，不依赖复杂的环境。</p>
+    <p>2023 年创办 FolderStudios，和几位伙伴一起做软件。这里记录我做过的东西。</p>
+    <p>（由于 vercel 在中国不稳定，暂不提供链接）</p>
+  </section>
+
+  <section id="works">
+    <h2>作品</h2>
+    <ul class="works">
+      <li>
+        <b>SikeFasterAI</b>
+        <span>单文件 HTML 的 AI 聊天应用。</span>
+        <a href="https://amucn114514.github.io/SikeFasterAI/" target="_blank" rel="noopener">VISIT</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="character">
+    <h2>角色设定</h2>
+    <figure>
+      <img class="sheet" src="https://s3.bmp.ovh/2026/11/07/1cHPjm6Q.png" alt="黑白配色的猫形角色设定图，含爪部、耳朵和配饰细节" loading="lazy">
+      <figcaption>设定立绘欢迎无偿（orz</figcaption>
+    </figure>
+  </section>
+
+  <section id="daily">
+    <h2>日常</h2>
+    <figure>
+      <img class="photo" src="https://s3.bmp.ovh/2026/11/07/GzqWbWfn.jpg" alt="木地板上的一只仓鼠，旁边有一颗心形痕迹" loading="lazy">
+    </figure>
+  </section>
+
+  <section id="contact">
+    <h2>联系</h2>
+    <ul class="links">
+      <li>邮箱：<a href="mailto:amuamu114514@outlook.com">amuamu114514@outlook.com</a></li>
+      <li>X：<a href="https://x.com/AmuCN1145" target="_blank" rel="noopener">@AmuCN1145</a></li>
+      <li>GitHub：<a href="https://github.com/AmuCN114514" target="_blank" rel="noopener">@AmuCN114514</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 AmuCN</footer>
+</main>
+<script>
+document.addEventListener('contextmenu',function(e){if(e.target.tagName==='IMG')e.preventDefault()});
+document.addEventListener('dragstart',function(e){if(e.target.tagName==='IMG')e.preventDefault()});
+</script>
+</body>
+</html>
